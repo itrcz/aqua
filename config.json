@@ -1,0 +1,23 @@
+{
+	"verbose": "true",
+	"port": "3000",
+	"ssl": false,
+	"credentials": {
+		"crt": "ssl/cert1.pem",
+		"key": "ssl/privkey1.pem"
+	},
+	"socket": {
+		"log":false
+	},
+	"database": {
+		"host": "127.0.0.1",
+		"user": "root",
+		"password": "1234",
+		"database": "AQ"
+	},
+	"controller_transport": {
+		"type": "COM",
+		"port": "/dev/master",
+		"baudRate": "9600"
+	}
+}
