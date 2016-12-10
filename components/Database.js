@@ -22,11 +22,17 @@ Date.prototype.SQL = function() {
     return this.getUTCFullYear() + "-" + twoDigits(1 + this.getUTCMonth()) + "-" + twoDigits(this.getUTCDate()) + " " + twoDigits(this.getUTCHours()) + ":" + twoDigits(this.getUTCMinutes()) + ":" + twoDigits(this.getUTCSeconds());
 };
 
+ns.connect = function() {
+	if (!ns.connection) {	
+		ns.connection = ns.engine.createConnection(__config.database);
+	}
+	if (ns.connection.state != "authenticated") {
+		ns.connection.connect();	
+	}
+}
 ns.$ = function(q,_callback) {
-
-	ns.connection = ns.engine.createConnection(__config.database);
 	
-	ns.connection.connect();
+	ns.connect();
 	
 	ns.connection.query(q, function(err, rows, fields) {
 		if (err) {
@@ -37,8 +43,7 @@ ns.$ = function(q,_callback) {
 			_callback(rows);
 		}
 	});
-	
-	ns.connection.end();
+	//ns.connection.end();
 }
 /*
 	Тест подключения к базе

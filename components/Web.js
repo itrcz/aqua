@@ -10,5 +10,5 @@ app.get('/', function (req, res) {
 //	res.sendFile(process.env.PWD+'/web/arm-web/index.html');
 //});		
 
-app.use(express.static('web'));
+app.use(express.static(__dirname+'/../web'));
 				 

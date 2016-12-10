@@ -37,7 +37,7 @@ Ext.define('App.Viewport', {
 			},
 			items: [
 			    {html:'', flex:1,bodyStyle:"background:#157fcc"},
-			    {html:'For developers only v: 0.0.3.144 Ilya Trikoz', width:230,
+			    {html:'For developers only v: 0.0.4.251 Ilya Trikoz', width:230,
 				    bodyStyle:'background:#157fcc;color:#fff;font-size:11px;font-weight:bold',
 			    },
 			],

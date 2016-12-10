@@ -77,6 +77,10 @@ global.print = function(string) {
 	}
 }
 //Print error message
+global.printDebug = function(string) {
+	console.log(string.bgWhite.magenta);
+}
+//Print error message
 global.printError = function(string) {
 	console.log(string.bgRed.white);
 }

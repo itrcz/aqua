@@ -33,8 +33,14 @@ Ext.define('App.unitgrid.Controller', {
             "#NEW_UNIT": {
                 click: this.addRecord
             },
-						"#HARDWARE_LOOKUP": {
+			"#HARDWARE_PING": {
+                click: this.pingHardware
+            },
+            "#HARDWARE_LOOKUP": {
                 click: this.lookupForHardware
+            },
+             "#HARDWARE_SET_SN": {
+                click: this.setSnHardware
             },
         });
 
@@ -115,7 +121,35 @@ Ext.define('App.unitgrid.Controller', {
             });
         }
     },
-		lookupForHardware: function(button) {
-				Ext.create('App.unitgrid.edit.hardware.Window');
-		}
+    /*
+	    Проверка взязи с устройтсвом
+    */
+	pingHardware: function(button) {
+		Api.Controller.ping({
+			comport: Ext.getCmp("unit_edit_hw_comport").value,
+			comspeed: Ext.getCmp("unit_edit_hw_comspeed").value,
+		}, function(data) {
+			if (data.success) {
+				Ext.MessageBox.alert('Проверка связи', "Успех!");
+		    } else {
+				Ext.MessageBox.alert('Проверка связи', data.message);
+			}
+		});
+	},
+	lookupForHardware: function(button) {
+		Ext.create('App.unitgrid.edit.hardware.Window');
+	},
+	setSnHardware: function(button) {
+		Api.Controller.setSn({
+			comport: Ext.getCmp("unit_edit_hw_comport").value,
+			comspeed: Ext.getCmp("unit_edit_hw_comspeed").value,
+			sn: Ext.getCmp("unit_edit_hw_serial").value,
+		}, function(data) {
+			if (data.success) {
+				Ext.MessageBox.alert('Установка SN', "Успех!");
+		    } else {
+				Ext.MessageBox.alert('Установка SN', data.message);
+			}
+		});
+	},
 });

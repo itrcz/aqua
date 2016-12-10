@@ -11,8 +11,8 @@ global.app		= express();
 var credentials = false
 
 if (__config.ssl) {
-	var privateKey  = fs.readFileSync(__config.credentials.key, 'utf8');
-	var certificate = fs.readFileSync(__config.credentials.crt, 'utf8');
+	var privateKey  = fs.readFileSync(__dirname + "/../" + __config.credentials.key, 'utf8');
+	var certificate = fs.readFileSync(__dirname + "/../" +__config.credentials.crt, 'utf8');
 		credentials = {key: privateKey, cert: certificate};
 		
 	if (!credentials.cert || !credentials.key) {

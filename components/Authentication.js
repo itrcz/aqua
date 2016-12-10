@@ -48,5 +48,4 @@ ns.check = function(arg,_callback) {
 			_callback(false);
 		}
 	})
-
 }

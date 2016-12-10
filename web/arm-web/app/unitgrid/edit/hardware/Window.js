@@ -42,7 +42,7 @@ Ext.define('App.unitgrid.edit.hardware.Window', {
         listeners: {
     	    render : function(grid){
                var store = grid.getStore();
-
+			   
                store.getProxy().setExtraParam('comspeed',Ext.getCmp("unit_edit_hw_comspeed").value);
 
                store.load();
