@@ -7,9 +7,12 @@ var ns = CreateNameSpace('unit');
 ns.vars = {
 	unit_table: "aq_unit",
 	unit_data_table: "aq_unit_data",
-	fields: ['id','name','owner','well_num','well_num_cadastral','well_type','well_drill_year','lat','lng','hw_serial', 'hw_comport', 'hw_comspeed', 'hw_allow_push']
+	fields: ['id','name','owner','well_num','well_num_cadastral','well_type','well_drill_year','lat','lng','hw_availability','hw_serial', 'hw_comport', 'hw_comspeed', 'hw_allow_push']
 };
 
+/*
+Выгрузить список юнитов из БД
+*/
 ns.getUnits = function(opt,_callback) {
 	if (typeof(_callback) !== "function") return;
 
@@ -37,6 +40,23 @@ ns.getUnits = function(opt,_callback) {
 	}
 
 	app.db.$(query.toString(), function(rows){
+
+		/*
+	 	Проверяем время последнего коннекта
+		и задаем статус онлайн / оффлайн
+		*/
+		var now = new Date().getTime();
+		for (var i = 0; i < rows.length; i++) {
+			rows[i].hw_availability = 0;
+			if (rows[i].last_activity) {
+				var last_activity = new Date(rows[i].last_activity).getTime();
+				console.log(last_activity, " = ", now);
+
+				if (now - 3600 * 1000 < last_activity) {
+					rows[i].hw_availability = 1;
+				}
+			}
+		}
 		_callback(rows);
 	});
 }
@@ -74,7 +94,7 @@ ns.addUnit = function(data,_callback) {
 			query.set(ns.vars.fields[i], data[ns.vars.fields[i]]);
 		}
 	}
-	
+
 	app.db.$(query.toString(), function(res){
 
 		if (res.insertId > 0) {
@@ -109,14 +129,14 @@ ns.updateUnit = function(data,_callback) {
 		if (!ns.checkUnitData(data,_callback)) {
 			return;
 		}
-		
+
 		for (var i=0;i<ns.vars.fields.length;i++) {
 			if (typeof(data[ns.vars.fields[i]]) !== "undefined") {
 				query.set(ns.vars.fields[i], data[ns.vars.fields[i]]);
 			}
 		}
-		
-	
+
+
 		if (data.instant_water_quality) 	query.set("instant_water_quality",		data.instant_water_quality);
 		if (data.instant_water_level) 		query.set("instant_water_level",		data.instant_water_level);
 		if (data.instant_water_consumption) query.set("instant_water_consumption",	data.instant_water_consumption);
@@ -245,37 +265,37 @@ ns.updateData = function(struct) {
 		query.where("hw_serial=" + struct.serial);
 		query.from(ns.vars.unit_table);
 		query.limit(1);
-	
+
 	app.db.$(query.toString(), function(rows){
 		if (rows && rows[0] && rows[0].id) {
 			var unitId = rows[0].id;
 			var data = struct.data;
 			var timestamp = struct.timestamp;
 			var paramCount = struct.params.length;
-				
+
 			for(var i=0; i < data.length; i++) {
-				
+
 				var query = "INSERT INTO =TABLE "+
 							"(recordDate, unit_id, A0, B0, F1, F2) "+
 							"VALUES(FROM_UNIXTIME(=TIMESTAMP), =ID, '=A0','=B0','=F1','=F2') "+
 							"ON DUPLICATE KEY UPDATE "+
 							"A0='=A0', B0='=B0', F1='=F1', F2='=F2'";
-				
+
 				query = query.replace(/=TABLE/g, ns.vars.unit_data_table);
 				query = query.replace(/=TIMESTAMP/g, (data[i].timestamp + timestamp));
 				query = query.replace(/=ID/g, unitId);
-				
+
 				query = query.replace(/=A0/g, data[i].params['A0']);
 				query = query.replace(/=B0/g, data[i].params['B0']);
 				query = query.replace(/=F1/g, data[i].params['F1']);
 				query = query.replace(/=F2/g, data[i].params['F2']);
-					
+
 				app.db.$(query, function(res){
-					
+
 				});
-					
+
 			}
-				
+
 		}
 	});
 };

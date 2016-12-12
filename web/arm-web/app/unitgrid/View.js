@@ -4,9 +4,9 @@
 Ext.define('App.unitgrid.View', {
     extend: 'Ext.grid.Panel',
     xtype: 'welllist',
-	
+
 	id:"UnitGrid",
-	
+
     requires: [
         'App.unitgrid.Store'
     ],
@@ -18,17 +18,11 @@ Ext.define('App.unitgrid.View', {
     },
 
     columns: [
-	    { text: 'Статус подключения', dataIndex: 'hw_availability', flex: 1, renderer: function(val) {
-		    switch(val) {
-			    case 0:
-			    	val = '<span class="unit_status online">Онлайн</span>';
-			    	break;
-			    case 1:
-			    	val = '<span class="unit_status offline">Нет связи</span>';
-			    	break;
-			    default:
-			    	val = '<span class="unit_status">Нет данных</span>';
-		    }
+	    { text: 'Статус подключения', dataIndex: 'hw_availability', flex: 1, renderer: function(availability) {
+        val = '<span class="unit_status offline">Нет связи</span>';
+        if (availability)
+          val = '<span class="unit_status online">Онлайн</span>';
+
 		    return val;
 	    }},
         { text: 'Ид',  dataIndex: 'id' },
@@ -50,7 +44,7 @@ Ext.define('App.unitgrid.View', {
 	    ]
 	}],
     listeners: {
-	    render : function(grid){      
+	    render : function(grid){
            var store = grid.getStore();
            store.load();
        }

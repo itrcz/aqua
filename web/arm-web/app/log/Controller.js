@@ -1,6 +1,3 @@
-/*
-	CONFERENCE CONTROLLER
-*/
 Ext.define('App.log.Controller', {
 	extend: 'Ext.app.Controller',
 	
@@ -21,7 +18,4 @@ Ext.define('App.log.Controller', {
 			module:'log',
 		});
 	},
-
-	
-
 });

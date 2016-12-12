@@ -1,6 +1,3 @@
-/**
- * This view is an example list of people.
- */
 Ext.define('App.log.View', {
     extend: 'Ext.grid.Panel',
     xtype: 'welllist',
