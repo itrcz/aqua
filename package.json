@@ -10,7 +10,9 @@
     "colors": "^1.1.2"
   },
   "devDependencies": {
-    "serialport": "^4.0.7"
+    "pm2": "^2.2.2",
+    "serialport": "^4.0.7",
+    "squel": "^5.5.0"
   },
   "scripts": {
     "test": "test"

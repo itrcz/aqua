@@ -1,0 +1,627 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"data",
+				"DataTables/"
+			],
+			[
+				"cel",
+				"cellspacing\tAttr"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"fu",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 391,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 115.0,
+		"last_filter": "push",
+		"selected_items":
+		[
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"quck",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"psuh",
+				"Git: Push"
+			],
+			[
+				"quckc",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"commit",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"REMOVE",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"comm",
+				"Git: Commit history"
+			],
+			[
+				"contro",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"fom",
+				"Format: Javascript"
+			]
+		],
+		"width": 507.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/aw/Documents/AquaMonitor/library"
+	],
+	"file_history":
+	[
+		"/Users/aw/Documents/AquaMonitor/package.json",
+		"/Users/aw/Documents/cisystem/sump/_src/js/main/app.js",
+		"/Users/aw/Documents/cisystem/sump/_src/layout/aside.html",
+		"/Users/aw/Documents/cisystem/sump/_src/form_master.html",
+		"/Users/aw/Documents/cisystem/sump/_src/form_curator.html",
+		"/Users/aw/Documents/cisystem/sump/_src/form_curator_start.html",
+		"/Users/aw/Documents/cisystem/sump/_src/form_master_start.html",
+		"/Users/aw/Documents/cisystem/sump/_src/modal/modal_master-statistic.html",
+		"/Users/aw/Documents/cisystem/sump/_src/style/main/_block.scss",
+		"/Users/aw/Documents/cisystem/sump/_src/form_master_new.html",
+		"/Users/aw/Documents/cisystem/sump/_src/form_curator_assigned.html",
+		"/Users/aw/Documents/cisystem/sump/_src/modal/modal_assign.html",
+		"/Users/aw/Documents/cisystem/sump/_src/form_curator_new.html",
+		"/Users/aw/Documents/cisystem/sump/_src/request.html",
+		"/Users/aw/Documents/cisystem/sump/_src/modal/modal_reassign.html",
+		"/Users/aw/Documents/cisystem/sump/_src/form_curator_fail.html",
+		"/Users/aw/Documents/cisystem/sump/_src/form_curator_done.html",
+		"/Users/aw/Documents/cisystem/sump/_src/form_master_done.html",
+		"/Users/aw/Documents/cisystem/sump/_src/form_master_deny.html",
+		"/Users/aw/Documents/cisystem/sump/_src/form_master_assigned.html",
+		"/Users/aw/Documents/cisystem/sump/_build/form_curator_fail.html",
+		"/Users/aw/Documents/cisystem/sump/_build/modal/modal_work-delay.html",
+		"/Users/aw/Documents/cisystem/sump/_build/form_curator_done.html",
+		"/Users/aw/Documents/cisystem/sump/_build/request.html",
+		"/Users/aw/Documents/cisystem/sump/_src/style/vendor/owl/owl.carousel.css",
+		"/Users/aw/Documents/cisystem/sump/_src/style/main.scss",
+		"/Users/aw/Documents/cisystem/sump/_src/js/main.js",
+		"/Users/aw/Downloads/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.css",
+		"/Users/aw/Documents/cisystem/sump/_src/style/vendor/slick/slick-theme.scss",
+		"/Users/aw/Documents/cisystem/sump/_src/js/vendor/slick/slick.scss",
+		"/Users/aw/Documents/cisystem/sump/_src/js/vendor/slick/slick-theme.scss",
+		"/Users/aw/Downloads/slick-1.6.0/slick/slick.scss",
+		"/Users/aw/Downloads/slick-1.6.0/slick/slick-theme.scss",
+		"/Users/aw/Documents/cisystem/sump/_src/style/main/_calend_master.scss",
+		"/Users/aw/Documents/cisystem/sump/_src/modal/modal_filter-skills.html",
+		"/Users/aw/Documents/cisystem/sump/_src/modal/modal_curator-map.html",
+		"/Users/aw/Documents/cisystem/sump/_src/calend_master_day.html",
+		"/Users/aw/Documents/cisystem/sump/_src/modal/modal_postponed.html",
+		"/Users/aw/Documents/cisystem/sump/_src/style/main/_app.scss",
+		"/Users/aw/Documents/cisystem/sump/_src/style/vendor/DataTables/datatables.css",
+		"/Users/aw/Desktop/makarov-aqua_signature.html",
+		"/Users/aw/Documents/cisystem/sump/_src/cadre.html",
+		"/Users/aw/Documents/cisystem/sump/_src/calend_master_day1.html",
+		"/Users/aw/Documents/cisystem/sump/COMMIT_EDITMSG.COMMIT_EDITMSG",
+		"/Users/aw/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/Users/aw/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/aw/Documents/cisystem/sump/_src/style/main/_base.scss",
+		"/Users/aw/Documents/_block.scss",
+		"/Users/aw/Documents/cisystem/sump/gulpfile.js",
+		"/Users/aw/Desktop/_src/style/main/_base.scss",
+		"/Users/aw/Library/Application Support/Sublime Text 3/Packages/Goto-CSS-Declaration/Default (OSX).sublime-keymap",
+		"/Users/aw/Library/Application Support/Sublime Text 3/Packages/Goto-CSS-Declaration/goto_css_declaration.sublime-settings",
+		"/Users/aw/Desktop/_src/index.html",
+		"/Users/aw/Desktop/gulp/gulpfile.js",
+		"/Users/aw/Downloads/bootstrap-sortable-master/Tests/emptyRowsSorting.js",
+		"/Users/aw/Downloads/bootstrap-sortable-master/Tests/initializeSortingValues.js",
+		"/Users/aw/Downloads/bootstrap-sortable-master/Tests/initializeSortingValues.html",
+		"/Users/aw/Downloads/bootstrap-sortable-master/Tests/emptyRowsSorting.html",
+		"/Users/aw/Downloads/bootstrap-sortable-master/Tests/tableInsideTable.js",
+		"/Users/aw/Desktop/html_gulp/_src/reference__list_master.html",
+		"/Applications/WebStorm.app/Contents/bin/webstorm.vmoptions",
+		"/Users/aw/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/962414CF-633B-4D99-A6C5-F819856A1092/1cv8.rdp",
+		"/Users/aw/Documents/DEVICE_ARM/firmware.elf",
+		"/Users/aw/Documents/DEVICE_ARM/graphics/warning.xbm",
+		"/Users/aw/Desktop/Untitled",
+		"/Applications/Arduino.app/Contents/Java/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/share/gcc-arm-none-eabi/samples/src/makefile.conf",
+		"/Applications/Arduino.app/Contents/Java/hardware/arduino/samd/variants/arduino_zero/linker_scripts/gcc/flash_with_bootloader.ld",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/unitgrid/edit/Window.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			"/Users/aw/Documents/cisystem/sump/_src/",
+			"/Users/aw/Documents/cisystem/sump",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"timesheet",
+			"выбрать",
+			"отло",
+			"info-block",
+			"Отложена",
+			"Домо",
+			"popover",
+			").popover",
+			"Установочные ",
+			"Тип раб",
+			"<td>Иванов И.И.</td>",
+			"Иванов И.И.",
+			"buttom",
+			"data-target=\"#modal_reassign\" data-toggle=\"dropdown\"",
+			"\n            <td>Тип работы</td>\n            ",
+			"масте сос",
+			"navText",
+			"l- ",
+			"carousel-item\"",
+			"carousel__item\"",
+			"owl",
+			"slick-image-ur",
+			"font",
+			"<td>323789</td>",
+			"вид",
+			"align-justify",
+			"<div>22 янв 12:22</div>\n                            <div>от Мастера</div>",
+			"23456",
+			"коммен",
+			"<td class=\"text-center\"><i class=\"fa fa-thumbs-o-up\" aria-hidden=\"true\"></i></td>",
+			"Вид работы",
+			" data-defaultsort=\"disabled\"",
+			"Код услуги",
+			"Вид работы",
+			"data-va",
+			"master-map",
+			"отложе",
+			" class=\"thead-bold\"",
+			"data-value",
+			" data-value=\"false\"",
+			" data-value=\"0\"",
+			" data-value=\"100136\"",
+			" data-value=\"42100\"",
+			" data-value=\"100134\"",
+			" data-defaultsort=\"disabled\"",
+			"<th class=\"no-sort\" data-defaultsort=\"disabled\">",
+			"421",
+			" data-value=\"",
+			" data-value=\"42131\"",
+			" data-value=\"2\"",
+			" data-value=\"3\"",
+			" data-value=\"100404\"",
+			" data-value",
+			" data-value=\"400\"",
+			" data-value=\"5\"",
+			" data-value=\"100431\"",
+			" data-value",
+			" data-value=\"313\"",
+			" data-value=\"42113\"",
+			" data-value=\"false\"",
+			" data-value=\"0\"",
+			" data-value=\"200\"",
+			" data-value=\"42100\"",
+			" data-value=\"100394\"",
+			"data-va",
+			"data",
+			"Мастера",
+			"popover__item",
+			"ata-value",
+			" data-value=\"false\"",
+			" data-value=\"0\"",
+			" data-value=\"42100\"",
+			" data-value=\"100394\"",
+			"23 января",
+			" data-valu",
+			" data-value=\"0\"",
+			" data-value=\"false\"",
+			"data-va",
+			" data-value=\"42100\"",
+			" data-value=\"100134\"",
+			" data-defaultsort=\"disabled\"",
+			"sort",
+			"sorting_asc",
+			"font-fami",
+			"data",
+			"sorting_asc",
+			"table",
+			"js_master_new_list",
+			"$calendBorderBottom",
+			"{\n",
+			"button",
+			"sideb",
+			" ",
+			"    ",
+			" ",
+			"B5",
+			"08:32:56  0000  ",
+			"                 µb....ð...).\n          \n08:32:56  0000  ",
+			"                 µb....ð..û..\n          \n08:32:56  0000  ",
+			"                 µb....ð..ú..\n          \n08:32:56  0000  ",
+			"                µb....ð...!.\n          \n08:32:56  0000  ",
+			"                µb....ð...#.\n          \n08:32:56  0000 ",
+			"                µb....ñ..ü..\n          \n08:32:56  0000  ",
+			"                 µb....ð...-.\n          \n08:32:56  0000  ",
+			"                µb....ð.....\n          \n08:32:56  0000  ",
+			"                 µb....ð..ÿ..\n          \n08:32:56  0000  ",
+			"                    µb.......3.\n          \n08:32:56  0000  ",
+			"                   µb.......8.\n          \n08:32:56  0000  ",
+			"-c -g -Os -w -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m0plus -DF_CPU=48000000L -DARDUINO=107010 -DARDUINO_SAM_ZERO -DARDUINO_ARCH_SAMD -D__SAMD21G18A__ -mthumb -DUSB_VID=0x2a03 -DUSB_PID=0x804f -DUSBCON -DUSB_MANUFACTURER= -DUSB_PRODUCT=\"Arduino M0 Pro\"",
+			"-c -g -Os -w -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m0plus -DF_CPU=48000000L -DARDUINO=107010 -DARDUINO_SAM_ZERO -DARDUINO_ARCH_SAMD -D__SAMD21G18A__ -mthumb -DUSB_VID=0x2a03 -DUSB_PID=0x804f -DUSBCON -DUSB_MANUFACTURER= -DUSB_PRODUCT=\"Arduino M0 Pro\"",
+			"/Applications/Arduino.app/Contents/Java/hardware/arduino/",
+			"/var/folders/y8/crmwq37x3jb4c_3tj5f8xjjh0000gr/T/build6459392913988772849.tmp",
+			"/Applications/Arduino.app/Contents/Java/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/",
+			"variant.c",
+			"variant.cpp.o",
+			"/TOOLS/arm-none-eabi-ar",
+			"-c -g -Os -w -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m0plus -DF_CPU=48000000L -DARDUINO=107010 -DARDUINO_SAM_ZERO -DARDUINO_ARCH_SAMD -D__SAMD21G18A__ -mthumb -DUSB_VID=0x2a03 -DUSB_PID=0x804f -DUSBCON -DUSB_MANUFACTURER= -DUSB_PRODUCT=\"Arduino M0 Pro\"",
+			"-ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m0plus -DF_CPU=48000000L -DARDUINO=107010 -DARDUINO_SAM_ZERO -DARDUINO_ARCH_SAMD -D__SAMD21G18A__ -mthumb -DUSB_VID=0x2a03 -DUSB_PID=0x804f -DUSBCON -DUSB_MANUFACTURER= -DUSB_PRODUCT=\"Arduino M0 Pro\"",
+			"linker",
+			"arduino/USB/",
+			"/Applications/Arduino.app/Contents/Java/hardware/arduino/samd/cores/arduino",
+			"USBCore",
+			"/Applications/Arduino.app/Contents/Java/hardware/arduino/samd/variants/arduino_zero",
+			"I/Applications/Arduino.app/Contents/Java/hardware/arduino/samd/cores/arduino",
+			"/TOOLS/arm-none-eabi-gcc",
+			"/Applications/Arduino.app/Contents/Java/hardware/tools/CMSIS/CMSIS/Include/",
+			"/Applications/Arduino.app/Contents/Java/hardware/tools/CMSIS/Device/ATMEL/",
+			"//"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<td>\n                <div>Иванов И.И.</div>\n            </td>",
+			"\n                <div>Иванов И.И.</div>\n            ",
+			"button",
+			"data-target=\"#modal_reassign\"",
+			"\n            ",
+			"l ",
+			"carousel- owl-item\"",
+			"carousel-item\"",
+			"owl-carousel",
+			"<td>\n                    <div class=\"element-popover\">\n                        <span class=\"element-popover__item\" data-placement=\"right\" data-toggle=\"popover\" data-trigger=\"hover\" data-content=\"Услуга номер 42100\">42100</span>\n                    </div>\n                </td>",
+			"wrench",
+			"<div>причина</div>",
+			"\n                    <div class=\"element-popover\">\n                        <span class=\"element-popover__item\" data-placement=\"right\" data-toggle=\"popover\" data-trigger=\"hover\" data-content=\"Услуга номер 42100\">42100</span>\n                    </div>\n                ",
+			" class=\"no-sort\"",
+			"\n            <div class=\"element-popover\">\n                    <span class=\"element-popover__item\" data-placement=\"right\" data-toggle=\"popover\" data-trigger=\"hover\" data-content=\"Услуга номер 42100\">42100</span>\n                </div>\n                ",
+			"<div class=\"element-popover\">\n\t\t\t\t\t<span class=\"element-popover__item\" data-placement=\"right\" data-toggle=\"popover\" data-trigger=\"hover\" data-content=\"Услуга номер 42100\">42100</span>\n\t\t\t\t</div>",
+			"4124",
+			"map-work",
+			"",
+			"<th class=\"no-sort\" data-defaultsort=\"disabled\">\n\t\t\t\t\t\t\t<div class=\"element-popover\">\n\t\t\t\t\t\t\t\t<span class=\"element-popover__item\" data-placement=\"top\" data-toggle=\"popover\" data-trigger=\"hover\" data-content=\"Высокое напряжение\">\n\t\t\t\t\t\t\t\t\t",
+			"",
+			", 0x",
+			"",
+			"\n",
+			"                 µb....ð..ÿ..\n          \n08:32:56  0000  ",
+			"\n",
+			"",
+			"AR",
+			"CXXFLAGS",
+			"CCFLAGS",
+			"arduino/",
+			"arduino",
+			"variants/arduino_zero",
+			"Iarduino",
+			"CC",
+			"CMSIS",
+			"/Applications/Arduino.app/Contents/Java/hardware/tools/CMSIS/CMSIS/Include/",
+			"/ATMEL/",
+			"/",
+			"/TMP/",
+			"/linker_script/",
+			"/TOOLS/",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 391,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										389,
+										390
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										0,
+										1
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/Theme - SoDaReloaded/settings/langs/npm JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 138.0
+	},
+	"pinned_build_system": "",
+	"project": "AquaMonitor.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 309.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
