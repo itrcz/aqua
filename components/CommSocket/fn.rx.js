@@ -14,20 +14,20 @@ module.exports = function(ns) {
       /*
       Если STX не равен 0xAA стандартна протокола
       */
-      if (self.buffer[PROTOCOL_POS_STX] != PROTOCOL_STX) {
+      if (self.buffer[PROTOCOL.POS_STX] != PROTOCOL.STX) {
         self.zeroBuffer();
         return;
       }
 
     //Если байт не является последним из пакета то считаем сумму CRC8
-    if (self.length != (self.buffer[PROTOCOL_POS_LEN] + PROTOCOL_POS_CRC_WITHOUTDATA)) self.crc = ns.util.crc8(buff, self.crc);
+    if (self.length != (self.buffer[PROTOCOL.POS_LEN] + PROTOCOL.POS_CRC_WITHOUTDATA)) self.crc = ns.util.crc8(buff, self.crc);
       /*
       Проверяем длину данные
-      если привыщает отвечаем PROTOCOL_STS_OVERFLOW
+      если привыщает отвечаем PROTOCOL.STS_OVERFLOW
       */
-      if (self.length == PROTOCOL_POS_LEN + 1) {
-        if (self.buffer[PROTOCOL_POS_LEN] > 250) {
-          txBegin( buffer[PROTOCOL_POS_CMD] | 0x40, PROTOCOL_STS_OVERFLOW);
+      if (self.length == PROTOCOL.POS_LEN + 1) {
+        if (self.buffer[PROTOCOL.POS_LEN] > 250) {
+          txBegin( buffer[PROTOCOL.POS_CMD] | 0x40, PROTOCOL.STS_OVERFLOW);
           txLength(0);
           txCrc();
         }
@@ -36,12 +36,12 @@ module.exports = function(ns) {
       Код ниже имеет смысл выполнять
       только при наличии STX, CMD, STS LEN
       */
-      if (self.length >= PROTOCOL_POS_DATA_START) {
+      if (self.length >= PROTOCOL.POS_DATA_START) {
         /*
         Проверяем если текущий байт является последними
         */
         //LEN + STX, CMD, STS LEN, CRC
-        if (self.length == (self.buffer[PROTOCOL_POS_LEN] + PROTOCOL_POS_CRC_WITHOUTDATA)) {
+        if (self.length == (self.buffer[PROTOCOL.POS_LEN] + PROTOCOL.POS_CRC_WITHOUTDATA)) {
           self.crcCorrect = false;
           self.dataBuffer = null;
           //Если сумма CRC совпадает
@@ -49,7 +49,7 @@ module.exports = function(ns) {
             //Обрезаем лишнее
             self.buffer = self.buffer.slice(0, self.length);
 
-            self.dataBuffer = self.buffer.slice(PROTOCOL_POS_DATA_START, self.length-1);
+            self.dataBuffer = self.buffer.slice(PROTOCOL.POS_DATA_START, self.length-1);
 
             self.crcCorrect = true;
             //EXEC();
@@ -57,12 +57,12 @@ module.exports = function(ns) {
           //Отдаем пакет
           return {
             buffer: self.buffer,
-            cmd_ack: self.buffer[PROTOCOL_POS_CMD_ACK],
-            sts: self.buffer[PROTOCOL_POS_STS],
-            len: self.buffer[PROTOCOL_POS_LEN],
+            cmd_ack: self.buffer[PROTOCOL.POS_CMD_ACK],
+            sts: self.buffer[PROTOCOL.POS_STS],
+            len: self.buffer[PROTOCOL.POS_LEN],
             data: self.dataBuffer,
             crc: self.buffer[self.buffer.length - 1],
-            check: self.crcCorrect ? PROTOCOL_STS_SUCCESS : PROTOCOL_STS_CRC
+            check: self.crcCorrect ? PROTOCOL.STS_SUCCESS : PROTOCOL.STS_CRC
           };
           //Обнуляем буфер
           self.zeroBuffer();

@@ -44,35 +44,3 @@ require("./fn.sendPacket.js")			(ns);
 require("./fn.sendResponse.js")		(ns);
 require("./obj.cmd.js")						(ns);
 
-
-ns.net = require('net');
-
-ns.net.createServer(function (socket) {
-
-	socket.name = socket.remotePort
-	console.log("New connection on port " + socket.name );
-
-	socket.paket = false;
-	socket.Buff = new ns.rxBuffer();
-
-	socket.on('data', function(data) {
-
-		for(var i = 0;i < data.length; i++) {
-			socket.paket = socket.Buff.$rx(data);
-
-			if (socket.paket) {
-				socket.Buff = new ns.rxBuffer();
-
-				ns.sendResponse(socket);
-				break;
-			}
-		}
-	});
-
-	socket.on('end', function () {
-
-	});
-	socket.on('close', function() {
-		console.log("Port " + socket.name + " disconnected" );
-	});
-}).listen(5055);

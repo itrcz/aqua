@@ -1,7 +1,7 @@
 global.about = {
 	name: "AquaMonitor",
 	version: "0.1.1",
-	build: "98",
+	build: "104",
 	author:"Ilya Trikoz"
 }
 //load config
@@ -19,7 +19,11 @@ global.appDir = path.resolve(__dirname);
 require(appDir+'/core/functions.js');
 require(appDir+'/core/namespaces.js');
 
-global.print("Initialized application");
+console.log(("                             ").bgBlue.white);
+console.log(("         "+ about.name +"         ").bgBlue.white);
+console.log(("       "+ " Версия:" + about.version + "         ").bgBlue.white);
+console.log(("        "+ " Cборка:" + about.build +"          ").bgBlue.white);
+console.log(("                             ").bgBlue.white);
 
 //Load components
 LoadComponent("Server");
@@ -34,3 +38,6 @@ LoadComponent("Controller");
 LoadComponent("Log");
 LoadComponent("Unit");
 
+setTimeout(function(){
+	console.log(("                             ").bgBlue.white);
+},100)

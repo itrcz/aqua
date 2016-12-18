@@ -34,7 +34,6 @@ module.exports = function(ns) {
 				rows[i].hw_availability = 0;
 				if (rows[i].last_activity) {
 					var last_activity = new Date(rows[i].last_activity).getTime();
-					console.log(last_activity, " = ", now);
 
 					if (now - 3600 * 1000 < last_activity) {
 						rows[i].hw_availability = 1;
