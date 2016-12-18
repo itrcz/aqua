@@ -38,11 +38,11 @@
 }
 .homescreen .logo {
 	background: url('resources/logo.svg') no-repeat;
-    height: 100px;
-    width: 100px;
-    display: block;
-    position: relative;
-    left: 0px;
+	height: 100px;
+	width: 100px;
+	display: block;
+	position: relative;
+	left: 0px;
 }
 .main_menu .x-tree-view {
 	background: #13508e;
@@ -103,16 +103,16 @@
 .unit_status {
 	position: relative;
 	font-size: 11px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 1px 4px 1px 4px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    color: #fff;
-    background: #333333;
-    display: inline-block;
-    display: block;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 1px 4px 1px 4px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	color: #fff;
+	background: #333333;
+	display: inline-block;
+	display: block;
 }
 .unit_status.online {
 	background: #64b500;
@@ -121,78 +121,105 @@
 	background: #af0000;
 }
 
-.unitMarker {
-	height: 200px;
+.map-popup {
+	min-width: 200px;
+	background-color: #fff;
+	border-radius: 4px;
+	display: block;
+	padding: 7px 10px;
+	position: absolute;
+	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
 }
-.unitMarker .title {
+.map-popup .arrow {
+	display: none;
+}
+.map-popup:before {
+	border-top: 10px solid #fff;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	bottom: -10px;
+	content: '';
+	display: block;
+	left: 50%;
+	margin-left: -10px;
+	position: absolute;
+}
+.map-popup__close {
+	font-size: 20px;
+	color: #777777;
+	line-height: 1;
+	margin-bottom: 4px;
+	display: block;
+}
+.map-popup__close:hover {
+	color: #333;
+	cursor: default;
+}
+.map-popup__title {
 	font-weight: 400;
-    color: #157fcc;
-    font-size: 16px;
+	color: #157fcc;
+	font-size: 16px;
 }
-.unitMarker .sn {
-	font-family: courier;
-    color: #999;
+.map-popup__subtitle {
+	color: #787878;
+	display: block;
+	padding-bottom: 2px;
 }
-.unitMarker .owner {
-    color: #787878;
-    display: block;
-    padding-bottom: 2px;
-}
-.unitMarker .status {
+.map-popup__status {
 	position: relative;
 	font-size: 11px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 1px 6px 1px 16px;
-    color: #fff;
-    background: #333333;
-    display: block;
-    text-align: center;
-    margin: 1px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 1px 6px 1px 16px;
+	color: #fff;
+	background: #333333;
+	display: block;
+	text-align: center;
+	margin: 1px;
 }
-.unitMarker .status:before {
-    font-size: 14px;
-    position: absolute;
-    left: -1px;
-    top: 2px;
+.map-popup__status:before {
+	font-size: 14px;
+	position: absolute;
+	left: -1px;
+	top: 2px;
 }
-.unitMarker .status.online {
+.map-popup__status.online {
 	background: #64b500;
 }
-.unitMarker .status.offline {
+.map-popup__status.offline {
 	background: #af0000;
 }
-.unitMarker .params {
+.map-popup__params {
 	border-spacing: 0;
 	width: 100%;
 	border: 1px solid #e4e6ed;
 }
-.unitMarker .params td {
+.map-popup__params tr:nth-child(even) {background: #e4e6ed}
+.map-popup__params tr:nth-child(odd) {background: #FFF}
+.map-popup__params td {
 	padding: 2px 4px;
 }
-.unitMarker .params tr:nth-child(even) {background: #e4e6ed}
-.unitMarker .params tr:nth-child(odd) {background: #FFF}
-
-.unitMarker .params tr td:nth-child(2) {
+.map-popup__params td:nth-child(2) {
 	font-weight: 400;
 }
-.unitMarker .controls {
+.map-popup__controls {
 	background: #ebf4fb;
-    border: 1px solid #d6e9f6;
-    font-size: 16px;
-    margin: 1px 1px;
+	border: 1px solid #d6e9f6;
+	font-size: 16px;
+	margin: 1px 1px;
 }
-.unitMarker .controls span {
+.map-popup__controls span {
 	display: inline-block;
-    background-color: #4297d4;
-    padding: 4px 2px;
-    margin-right: 1px;
-    color: #ffffff;
+	background-color: #4297d4;
+	padding: 4px 2px;
+	margin-right: 1px;
+	color: #ffffff;
 }
-.unitMarker .controls span:hover {
+.map-popup__controls span:hover {
 	background-color: #4ca8eb;
 	cursor: pointer;
 }
+
 .service {
 	font-weight: bold;
 }

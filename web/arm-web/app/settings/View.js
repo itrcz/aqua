@@ -1,15 +1,15 @@
 Ext.define('App.settings.View', {
-    extend: 'Ext.tab.Panel',
-    id:"settings",
+	extend: 'Ext.tab.Panel',
+	id:"settings",
 
-    title: 'Настройки',
+	title: 'Настройки',
 	bodyStyle: "padding:10px",
 	items:[
+	{
+		title:"Основные",
+		items: [
 		{
-			title:"Основные",
-			items: [
-				{
-					xtype: "serviceslist",
+			xtype: "serviceslist",
 					//title: "Службы",
 					//columns: [
 				    //   
@@ -17,14 +17,14 @@ Ext.define('App.settings.View', {
 				    //    { text: 'Статус', dataIndex: 'action', flex: 2 },
 				    //    { text: '', dataIndex: 'ipaddr', flex: 1 }
 				    //],
+				  }
+				  ]
+				},
+				{
+					title:"База данных"
+				},
+				{
+					title:"SSL"
 				}
-			]
-		},
-		{
-			title:"База данных"
-		},
-		{
-			title:"SSL"
-		}
-	]
-});
+				]
+			});

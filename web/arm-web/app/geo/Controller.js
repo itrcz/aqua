@@ -2,7 +2,7 @@ Ext.define('App.geo.Controller', {
     extend: 'Ext.app.Controller',
     views: 	['App.geo.View'],
     requires: [
-        'App.geo.gmap.Controller',
+        'App.geo.map.Controller',
         'App.unitgrid.Store'
     ],
     init: function() {

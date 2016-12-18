@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"names",
+				"namespaces"
+			],
+			[
 				"data",
 				"DataTables/"
 			],
@@ -27,14 +35,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 391,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -43,10 +43,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 115.0,
-		"last_filter": "push",
+		"height": 159.0,
+		"last_filter": "install",
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"push",
 				"Git: Push"
@@ -54,6 +58,10 @@
 			[
 				"quck",
 				"Git: Quick Commit (repo)"
+			],
+			[
+				"gitco",
+				"Git: Commit history"
 			],
 			[
 				"psuh",
@@ -70,10 +78,6 @@
 			[
 				"git",
 				"Git: Commit"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"INSTALL",
@@ -133,10 +137,81 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/aw/Documents/AquaMonitor/library"
+		"/Users/aw/Documents/AquaMonitor",
+		"/Users/aw/Documents/AquaMonitor/components/Database",
+		"/Users/aw/Documents/AquaMonitor/components/Unit",
+		"/Users/aw/Documents/AquaMonitor/web",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/log",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/log/commutication",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/log/global",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/settings",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/unitgrid/edit",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/plugins"
 	],
 	"file_history":
 	[
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/log/global/Store.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/Init.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/log/Controller.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/log/View.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/log/global/View.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/log/commutication/Store.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/log/commutication/View.js",
+		"/Users/aw/Documents/AquaMonitor/components/Database/Database.js",
+		"/Users/aw/Documents/AquaMonitor/components/Unit/Unit.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/plugins/MapPanel.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/unitgrid/edit/Window.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/geo/map/View.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/theme.css",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/geo/map/Controller.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/geo/Controller.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/unitgrid/Controller.js",
+		"/Users/aw/Documents/cisystem/sump/_src/modal/modal_curator-map.html",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/geo/View.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/boot.js",
+		"/Users/aw/Documents/AquaMonitor/components/Log/Log.js",
+		"/Users/aw/Documents/AquaMonitor/components/Services/define.Services.js",
+		"/Users/aw/Documents/AquaMonitor/components/Services/Services.js",
+		"/Users/aw/Documents/AquaMonitor/app.js",
+		"/Users/aw/Documents/AquaMonitor/components/Controller/define.Controller.js",
+		"/Users/aw/Documents/AquaMonitor/components/Controller/Controller.js",
+		"/Users/aw/Documents/AquaMonitor/components/Log/define.Log.js",
+		"/Users/aw/Documents/AquaMonitor/components/Log/define.CommLog.js",
+		"/Users/aw/Documents/AquaMonitor/components/Log/define.js",
+		"/Users/aw/Documents/AquaMonitor/components/Controller/define.js",
+		"/Users/aw/Documents/AquaMonitor/components/CommSocket/CommSocket.js",
+		"/Users/aw/Documents/AquaMonitor/components/Log/fn.getCommunicationLog.js",
+		"/Users/aw/Documents/AquaMonitor/components/Log/fn.writeCommunicationLog.js",
+		"/Users/aw/Documents/AquaMonitor/components/Log/fn.getLog.js",
+		"/Users/aw/Documents/AquaMonitor/components/Authentication/Authentication.js",
+		"/Users/aw/Documents/AquaMonitor/components/Controller/fn.setSerialNumber.js",
+		"/Users/aw/Documents/AquaMonitor/components/Controller/fn.sendPing.js",
+		"/Users/aw/Documents/AquaMonitor/components/Controller/fn.findHardware.js",
+		"/Users/aw/Documents/AquaMonitor/components/Controller/fn.timeSync.js",
+		"/Users/aw/Documents/AquaMonitor/components/Authentication/fn.check.js",
+		"/Users/aw/Documents/AquaMonitor/components/CommSocket/fn.sendPacket.js",
+		"/Users/aw/Documents/AquaMonitor/components/CommSocket/fn.rx.js",
+		"/Users/aw/Documents/AquaMonitor/components/CommSocket/fn.sendResponse.js",
+		"/Users/aw/Documents/AquaMonitor/components/CommSocket/obj.cmd.js",
+		"/Users/aw/Documents/AquaMonitor/components/CommSocket/commands/commands.js",
+		"/Users/aw/Documents/AquaMonitor/components/CommSocket/util.tx.js",
+		"/Users/aw/Documents/AquaMonitor/components/CommSocket/fn.tx.js",
+		"/Users/aw/Documents/AquaMonitor/core/namespaces.js",
+		"/Users/aw/Documents/AquaMonitor/core/functions.js",
+		"/Users/aw/Documents/AquaMonitor/components/Server/Server.js",
+		"/Users/aw/Documents/AquaMonitor/web/arm-web/index.html",
+		"/Users/aw/Documents/AquaMonitor/components/Web/Web.js",
+		"/Users/aw/Documents/AquaMonitor/components/Database.js",
+		"/Users/aw/Documents/AquaMonitor/library/functions.js",
+		"/Users/aw/Documents/AquaMonitor/components/Database/connect/connect.js",
+		"/Users/aw/Documents/AquaMonitor/components/Database/test/test.js",
+		"/Users/aw/Documents/AquaMonitor/components/Database/query/query.js",
+		"/Users/aw/Documents/AquaMonitor/components/Authentication.js",
+		"/Users/aw/Documents/AquaMonitor/.gitignore",
+		"/Users/aw/Documents/AquaMonitor/gulpfile.js",
+		"/Users/aw/Documents/AquaMonitor/components/Database/index.js",
 		"/Users/aw/Documents/AquaMonitor/package.json",
 		"/Users/aw/Documents/cisystem/sump/_src/js/main/app.js",
 		"/Users/aw/Documents/cisystem/sump/_src/layout/aside.html",
@@ -172,7 +247,6 @@
 		"/Users/aw/Downloads/slick-1.6.0/slick/slick-theme.scss",
 		"/Users/aw/Documents/cisystem/sump/_src/style/main/_calend_master.scss",
 		"/Users/aw/Documents/cisystem/sump/_src/modal/modal_filter-skills.html",
-		"/Users/aw/Documents/cisystem/sump/_src/modal/modal_curator-map.html",
 		"/Users/aw/Documents/cisystem/sump/_src/calend_master_day.html",
 		"/Users/aw/Documents/cisystem/sump/_src/modal/modal_postponed.html",
 		"/Users/aw/Documents/cisystem/sump/_src/style/main/_app.scss",
@@ -203,18 +277,19 @@
 		"/Users/aw/Documents/DEVICE_ARM/graphics/warning.xbm",
 		"/Users/aw/Desktop/Untitled",
 		"/Applications/Arduino.app/Contents/Java/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/share/gcc-arm-none-eabi/samples/src/makefile.conf",
-		"/Applications/Arduino.app/Contents/Java/hardware/arduino/samd/variants/arduino_zero/linker_scripts/gcc/flash_with_bootloader.ld",
-		"/Users/aw/Documents/AquaMonitor/web/arm-web/app/unitgrid/edit/Window.js"
+		"/Applications/Arduino.app/Contents/Java/hardware/arduino/samd/variants/arduino_zero/linker_scripts/gcc/flash_with_bootloader.ld"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
 		"height": 95.0,
 		"where_history":
 		[
+			"/Users/aw/Documents/AquaMonitor/components",
+			"<project>",
 			"/Users/aw/Documents/cisystem/sump/_src/",
 			"/Users/aw/Documents/cisystem/sump",
 			""
@@ -225,6 +300,57 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"a =",
+			"record",
+			"unitController",
+			"arrow",
+			"unit.els.popup",
+			"weGotData",
+			"MyBalloonContentLayout",
+			"createUnit",
+			"mapMarker",
+			"map-marker",
+			".map-marker",
+			"infoWindow",
+			"owner",
+			"unitMarker",
+			"a =",
+			"myMap",
+			"getUnits",
+			"record",
+			"click",
+			"onclick",
+			"self.units",
+			"units",
+			"unit.els.controls",
+			"unitFileds",
+			"gmap",
+			"setSnsetSn",
+			"setSn",
+			"CMD.",
+			"rx",
+			"cmd",
+			"param",
+			"sendResponse",
+			"STX",
+			"PRTOTOCOL_",
+			"PROTOCOL_",
+			" \t=",
+			" =",
+			"PROTOCOL_",
+			"PRTOTOCOL_",
+			"PROTOCOL_",
+			"arm-web",
+			"src:\"/arm-web/",
+			"/arm-web/",
+			"/arm-web/\"",
+			"/arm-web/",
+			"pack(",
+			"pack",
+			"fs",
+			"path",
+			"colors",
+			"theme",
 			"timesheet",
 			"выбрать",
 			"отло",
@@ -301,58 +427,7 @@
 			"23 января",
 			" data-valu",
 			" data-value=\"0\"",
-			" data-value=\"false\"",
-			"data-va",
-			" data-value=\"42100\"",
-			" data-value=\"100134\"",
-			" data-defaultsort=\"disabled\"",
-			"sort",
-			"sorting_asc",
-			"font-fami",
-			"data",
-			"sorting_asc",
-			"table",
-			"js_master_new_list",
-			"$calendBorderBottom",
-			"{\n",
-			"button",
-			"sideb",
-			" ",
-			"    ",
-			" ",
-			"B5",
-			"08:32:56  0000  ",
-			"                 µb....ð...).\n          \n08:32:56  0000  ",
-			"                 µb....ð..û..\n          \n08:32:56  0000  ",
-			"                 µb....ð..ú..\n          \n08:32:56  0000  ",
-			"                µb....ð...!.\n          \n08:32:56  0000  ",
-			"                µb....ð...#.\n          \n08:32:56  0000 ",
-			"                µb....ñ..ü..\n          \n08:32:56  0000  ",
-			"                 µb....ð...-.\n          \n08:32:56  0000  ",
-			"                µb....ð.....\n          \n08:32:56  0000  ",
-			"                 µb....ð..ÿ..\n          \n08:32:56  0000  ",
-			"                    µb.......3.\n          \n08:32:56  0000  ",
-			"                   µb.......8.\n          \n08:32:56  0000  ",
-			"-c -g -Os -w -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m0plus -DF_CPU=48000000L -DARDUINO=107010 -DARDUINO_SAM_ZERO -DARDUINO_ARCH_SAMD -D__SAMD21G18A__ -mthumb -DUSB_VID=0x2a03 -DUSB_PID=0x804f -DUSBCON -DUSB_MANUFACTURER= -DUSB_PRODUCT=\"Arduino M0 Pro\"",
-			"-c -g -Os -w -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m0plus -DF_CPU=48000000L -DARDUINO=107010 -DARDUINO_SAM_ZERO -DARDUINO_ARCH_SAMD -D__SAMD21G18A__ -mthumb -DUSB_VID=0x2a03 -DUSB_PID=0x804f -DUSBCON -DUSB_MANUFACTURER= -DUSB_PRODUCT=\"Arduino M0 Pro\"",
-			"/Applications/Arduino.app/Contents/Java/hardware/arduino/",
-			"/var/folders/y8/crmwq37x3jb4c_3tj5f8xjjh0000gr/T/build6459392913988772849.tmp",
-			"/Applications/Arduino.app/Contents/Java/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/",
-			"variant.c",
-			"variant.cpp.o",
-			"/TOOLS/arm-none-eabi-ar",
-			"-c -g -Os -w -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m0plus -DF_CPU=48000000L -DARDUINO=107010 -DARDUINO_SAM_ZERO -DARDUINO_ARCH_SAMD -D__SAMD21G18A__ -mthumb -DUSB_VID=0x2a03 -DUSB_PID=0x804f -DUSBCON -DUSB_MANUFACTURER= -DUSB_PRODUCT=\"Arduino M0 Pro\"",
-			"-ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m0plus -DF_CPU=48000000L -DARDUINO=107010 -DARDUINO_SAM_ZERO -DARDUINO_ARCH_SAMD -D__SAMD21G18A__ -mthumb -DUSB_VID=0x2a03 -DUSB_PID=0x804f -DUSBCON -DUSB_MANUFACTURER= -DUSB_PRODUCT=\"Arduino M0 Pro\"",
-			"linker",
-			"arduino/USB/",
-			"/Applications/Arduino.app/Contents/Java/hardware/arduino/samd/cores/arduino",
-			"USBCore",
-			"/Applications/Arduino.app/Contents/Java/hardware/arduino/samd/variants/arduino_zero",
-			"I/Applications/Arduino.app/Contents/Java/hardware/arduino/samd/cores/arduino",
-			"/TOOLS/arm-none-eabi-gcc",
-			"/Applications/Arduino.app/Contents/Java/hardware/tools/CMSIS/CMSIS/Include/",
-			"/Applications/Arduino.app/Contents/Java/hardware/tools/CMSIS/Device/ATMEL/",
-			"//"
+			" data-value=\"false\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -360,6 +435,18 @@
 		"regex": false,
 		"replace_history":
 		[
+			"popup",
+			"map-popup",
+			".map-popup",
+			"mapMarker",
+			"map-marker",
+			"map",
+			"cmd.",
+			"cmd",
+			"PROTOCOL.",
+			":",
+			"PROTOCOL.",
+			"src:root+\"",
 			"<td>\n                <div>Иванов И.И.</div>\n            </td>",
 			"\n                <div>Иванов И.И.</div>\n            ",
 			"button",
@@ -413,128 +500,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 391,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										389,
-										390
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										0,
-										1
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"syntax": "Packages/Theme - SoDaReloaded/settings/langs/npm JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -581,7 +548,7 @@
 	"project": "AquaMonitor.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -595,12 +562,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Documents/cisystem/sump.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{

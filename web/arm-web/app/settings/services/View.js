@@ -5,8 +5,6 @@ Ext.define('App.settings.services.View', {
     extend: 'Ext.grid.Panel',
     xtype: 'serviceslist',
 	
-	id:"log",
-	
     requires: [
         'App.settings.services.Store'
     ],

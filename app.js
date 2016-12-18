@@ -1,29 +1,36 @@
 global.about = {
-	name: "TestApplication",
-	version: "0.0.1",
-	build: "24",
+	name: "AquaMonitor",
+	version: "0.1.1",
+	build: "98",
 	author:"Ilya Trikoz"
 }
 //load config
-
 global.__config = require('./config.json');
 
-//load global functions
-require('./library/functions.js');
+global.fs 		= require('fs');
+global.path 	= require('path');
+global.colors = require('colors');
+global.crypto = require('crypto');
 
-global.pack = require('./library/pack.js');
+
+global.appDir = path.resolve(__dirname);
+
+//load global functions
+require(appDir+'/core/functions.js');
+require(appDir+'/core/namespaces.js');
 
 global.print("Initialized application");
 
 //Load components
-require("./components/Server.js");
-require("./components/Web.js");
-require("./components/Database.js");
-require("./components/Authentication.js");
-require("./components/Socket.js");
-require("./components/Services.js");
-require("./components/BinData.js");
-require("./components/CommSocket.js");
-require("./components/Controller.js");
-require("./components/Log.js");
-require("./components/Unit.js");
+LoadComponent("Server");
+
+LoadComponent("Database");
+LoadComponent("Authentication");
+LoadComponent("Socket");
+LoadComponent("Services");
+LoadComponent("BinData");
+LoadComponent("CommSocket");
+LoadComponent("Controller");
+LoadComponent("Log");
+LoadComponent("Unit");
+

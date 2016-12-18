@@ -1,9 +1,9 @@
 Ext.define('App.log.Controller', {
 	extend: 'Ext.app.Controller',
 	
-	views: 	['App.log.View'],
+	views: 	['App.log.View', 'App.log.global.View', 'App.log.commutication.View'],
 	//models:	['pbxe.module.addressbook.Model','pbxe.module.addressbook.edit.PhoneModel'],
-	stores:	['App.log.Store'],
+	stores:	['App.log.global.Store', 'App.log.commutication.Store'],
 	
 	init: function() {
 

@@ -133,11 +133,9 @@ Ext.define('App.unitgrid.edit.Window', {
 											labelWidth: 150
 										}]
 									}, {
-										xtype: 'gmappanel',
+										xtype: 'mappanel',
 										height: 300,
-										onMapInit: function() {
-											var map = this;
-
+										onMapReady: function(map) {
 											var form = me.down("form");
 											var val = form.getValues();
 
@@ -150,30 +148,26 @@ Ext.define('App.unitgrid.edit.Window', {
 												form.getForm().findField("lng").setValue(val.lng);
 											}
 
-											var cords = {
-												lat: parseFloat(val.lat),
-												lng: parseFloat(val.lng)
-											};
+											var cords = [parseFloat(val.lat), parseFloat(val.lng)];
 
-											var marker = new google.maps.Marker({
-												position: cords,
-												map: this.gmap,
-												draggable: true
+											var marker = new ymaps.Placemark(cords, {}, {preset: "islands#blueWaterParkCircleIcon",draggable: true});
+
+											map.geoObjects.add( marker );	
+
+		
+											
+											marker.events.add("drag",function(e){
+												var coords = e.get('target').geometry.getCoordinates();
+												form.getForm().findField("lat").setValue(coords[0]);
+												form.getForm().findField("lng").setValue(coords[1]);
 											});
 
-											marker.addListener('drag', function(event) {
-												form.getForm().findField("lat").setValue(event.latLng.lat());
-												form.getForm().findField("lng").setValue(event.latLng.lng());
-											});
+											marker.events.add("dragend",function(e){
+												var coords = e.get('target').geometry.getCoordinates();
 
-											marker.addListener('dragend', function(event) {
-												var cords = {
-													lat: parseFloat(event.latLng.lat()),
-													lng: parseFloat(event.latLng.lng())
-												};
-												map.setCenter(cords);
+												map.setCenter(coords);
 											});
-
+											
 											setTimeout(function() {
 												map.setCenter(cords);
 											}, 1);

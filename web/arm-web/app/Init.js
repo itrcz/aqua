@@ -4,7 +4,7 @@ Ext.application({
     enableQuickTips: true,
 	requires: [
 	    "Plugins.SocketProvider",
-		"Plugins.GMapPanel",
+		"Plugins.MapPanel",
 		"Ext.tab.Panel",
 	],
     constrollers: [
@@ -29,7 +29,6 @@ Ext.application({
 			App.app.getController('App.geo.Controller');
 			App.app.getController('App.reports.Controller');
 			App.app.getController('App.log.Controller');
-			App.app.getController('App.commLog.Controller');
 			App.app.getController('App.settings.Controller');
 
 		}

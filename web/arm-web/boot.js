@@ -5,6 +5,7 @@
 var Boot = function(config) {
 	var self = this;
 	var software = null;
+	var root = "/arm-web/";
 
 	document.onmousedown = function(event) { if(event.button==2) return false; }
 	
@@ -107,6 +108,7 @@ var Boot = function(config) {
 							}
 							if (res.software) {
 								self.software = res.software;	
+								self.copyright.innerHTML = self.software.name + " версия: " + self.software.version + " сборка: " + self.software.build;
 							}
 							
 							setTimeout(function(){
@@ -160,55 +162,56 @@ var Boot = function(config) {
 		{
 			type:"style",
 			title: "Loadnig UI icons",
-			src:"/arm-web/library/fontello/css/fontello.css",
+			src:root+"library/fontello/css/fontello.css",
 		},
 		//Загрузка глифов
 		{
 			type:"style",
 			title: "Loadnig UI icons",
-			src:"/arm-web/library/fontello/css/fontello-codes.css",
+			src:root+"library/fontello/css/fontello-codes.css",
 		},
 		//Загрузка скриптов для карт гугл
 		{
 			type:"script",
 			title: "Loading maps",
-			src:"https://maps.googleapis.com/maps/api/js?key=AIzaSyAtbFIwn98QJ2miK1hGu-ERLx3r0S-Vrzg",
+			src: "https://api-maps.yandex.ru/2.1/?lang=ru_RU",
+			//src:"https://maps.googleapis.com/maps/api/js?key=AIzaSyAtbFIwn98QJ2miK1hGu-ERLx3r0S-Vrzg",
 		},
 		//Загрузка фреймворка
 		{
 			type:"script",
 			title: "Loadnig framework core",
-			src:"/arm-web/library/ext/ext-all-rtl.js",
+			src:root+"library/ext/ext-all-rtl.js",
 		},
 		//Загрузка библиотеки для графиков
 		{
 			type:"script",
 			title: "Loadnig chart library",
-			src:"/arm-web/library/ext/charts.js",
+			src:root+"library/ext/charts.js",
 		},
 		//Загрузка стилей для фреймворка
 		{
 			type:"style",
 			title: "Loadnig framework UI",
-			src:"/arm-web/library/ext/resources/theme-crisp-all.css",
+			src:root+"library/ext/resources/theme-crisp-all.css",
 		},
 		//Загрузка стилей для графиков
 		{
 			type:"style",
 			title: "Loadnig chart UI",
-			src:"/arm-web/library/ext/resources/charts-all.css",
+			src:root+"library/ext/resources/charts-all.css",
 		},
 		//Загрузка дополнительных стилей
 		{
 			type:"style",
 			title: "Loadnig styles",
-			src:"/arm-web/theme.css",
+			src:root+"theme.css",
 		},
 		//Загрузка jquery скриптов
 		{
 		  type:"script",
 		  title: "Loading jquery",
-		  src:"/arm-web/jquery-1.12.4.min.js",
+		  src:root+"library/jquery/jquery-1.12.4.min.js",
 		},
 		//Загрузка необходимых классов для общения с сервером
 		{
@@ -227,7 +230,7 @@ var Boot = function(config) {
 		{
 			type:"script",
 			title: "Initiating application",
-			src:"/arm-web/app/Init.js",
+			src:root+"app/Init.js",
 		},
 		//Таймаут для того, чтобы приложение успело отрисоватся перед пропаданием загрузчика
 		{
@@ -275,16 +278,18 @@ var Boot = function(config) {
 //Отрисовка загрузчика
 Boot.prototype.init = function(_callback) {
 	
-	var body 			= document.body;
+	var body 							= document.body;
+				
+	this.boot 						= this.el.create("div");
+				
+	var loader 						= this.el.create("div");
+	var logo 							= this.el.create("div");
+
+	this.copyright 				= this.el.create("div");
 	
-	this.boot 			= this.el.create("div");
-	
-	var loader 			= this.el.create("div");
-	var logo 			= this.el.create("div");
-	
-	this.progress_title = this.el.create("div");
-	this.progress 		= this.el.create("div");
-	this.progress_tumb 	= this.el.create("div");
+	this.progress_title 	= this.el.create("div");
+	this.progress 				= this.el.create("div");
+	this.progress_tumb 		= this.el.create("div");
 	
 	this.connectionProblem = this.el.create("div");
 		
@@ -300,6 +305,9 @@ Boot.prototype.init = function(_callback) {
 	this.el.addClass(logo,"logo");
 	loader.appendChild(logo);
 	
+	this.el.addClass(this.copyright,"copyright");
+	loader.appendChild(this.copyright);
+
 	//Форма авторизации
 	this.auth_form = {
 		form: this.el.create("div"),

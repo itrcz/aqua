@@ -5,6 +5,8 @@ Ext.define('App.unitgrid.View', {
     extend: 'Ext.grid.Panel',
     xtype: 'welllist',
 
+    flex:1,
+    
 	id:"UnitGrid",
 
     requires: [

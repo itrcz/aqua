@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css" title="" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="boot.css" title="" type="text/css" media="screen" charset="utf-8">
 		<script type="text/javascript" src="boot.js"></script>
 		<title>FOR DEVELOPERS ONLY</title>
 	</head>
 	<body>
 		<script type="text/javascript">
-			new Boot().init();
+				window.boot = new Boot();
+				window.boot.init();				
 		</script>
 	</body>
 </html>

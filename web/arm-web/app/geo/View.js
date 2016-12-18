@@ -9,7 +9,7 @@ Ext.define('App.geo.View', {
         border:0,
         padding: "10 10 10 10",
         items: [
-            ,'-',
+            '-',
             {
                 xtype: 'combobox',
                 editable: false,
@@ -35,12 +35,9 @@ Ext.define('App.geo.View', {
             }
         ]
     }],
-
-
     items: [
     {
-      xtype:'geo_gmap',
-
+      xtype:'maps',
     }]
 
 });
