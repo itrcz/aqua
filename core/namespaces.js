@@ -1,6 +1,6 @@
 
 global.LoadComponent = function(cmp) {
-	require(appDir+"/components/"+cmp+"/"+cmp+".js");
+	require(`${appDir}/components/${cmp}/${cmp}.js`);
 }
 
 /*

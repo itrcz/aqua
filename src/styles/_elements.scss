@@ -1,0 +1,38 @@
+/*
+Цветной бадж с белым текстом
+*/
+.badge {
+	display: inline-block;
+	position: relative;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px 5px 1px 5px;
+	border-radius: 2px;
+	color: white;
+	background: $colorBadgeGray;
+
+	&-red {
+		background: $colorBadgeRed;
+	}
+	&-green {
+		background: $colorBadgeGreen;
+	}
+	&-orange {
+		background: $colorBadgeOrange;
+	}
+	&-blue {
+		background: $colorBadgeBlue;
+	}
+	&-dark {
+		background: $colorBadgeDark;
+	}
+
+	&-upper {
+			text-transform: uppercase;
+	}
+
+	&:before {
+		margin: 0;
+    margin-right: 5px;
+	}
+}

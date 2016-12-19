@@ -13,4 +13,6 @@
 .icon-location:before { content: '\e80b'; } /* '' */
 .icon-pencil:before { content: '\e80c'; } /* '' */
 .icon-chart-bar:before { content: '\e80d'; } /* '' */
+.icon-link:before { content: '\e80e'; } /* '' */
+.icon-unlink:before { content: '\f127'; } /* '' */
 .icon-plug:before { content: '\f1e6'; } /* '' */

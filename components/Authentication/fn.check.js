@@ -2,15 +2,15 @@ module.exports = function(ns) {
 
 	ns.check = function(arg,_callback) {
 
-		var query = squel.select();
+		let query = squel.select();
 
 		if (arg.login && arg.password && arg.password.length == 32) {
-			query.where("username='"+arg.login+"'");
-			query.where("password='"+arg.password+"'");
+			query.where(`username="${arg.login}"`);
+			query.where(`password="${arg.password}"`);
 
 		} else if(arg.session && arg.session.length == 128) {
 
-			query.where("session='"+arg.session+"'");
+			query.where(`session="${arg.session}"`);
 
 		} else {
 			return _callback(false);
@@ -22,12 +22,12 @@ module.exports = function(ns) {
 
 			if (rows && rows[0]) {
 
-				var session = crypto.randomBytes(64).toString('hex');
+				const session = crypto.randomBytes(64).toString('hex');
 
-				var query = squel.update();
+				query = squel.update();
 				query.table(ns.vars.users_table);
 				query.set("session", session);
-				query.where("id="+rows[0].id);
+				query.where(`id="${rows[0].id}"`);
 				
 				app.db.$(query.toString(), function(res){
 					if (res.affectedRows > 0) {

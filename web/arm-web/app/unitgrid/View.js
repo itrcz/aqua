@@ -21,16 +21,16 @@ Ext.define('App.unitgrid.View', {
 
     columns: [
 	    { text: 'Статус подключения', dataIndex: 'hw_availability', flex: 1, renderer: function(availability) {
-        val = '<span class="unit_status offline">Нет связи</span>';
+        val = '<span class="badge badge-red icon-unlink">Нет связи</span>';
         if (availability)
-          val = '<span class="unit_status online">Онлайн</span>';
+          val = '<span class="badge badge-greem icon-link">Онлайн</span>';
 
 		    return val;
 	    }},
-        { text: 'Ид',  dataIndex: 'id' },
+        { text: 'Номер',  dataIndex: 'id' },
         { text: 'Имя', dataIndex: 'name', flex: 1 },
         { text: 'Владелец', dataIndex: 'owner', flex: 1 },
-        { text: 'Серийны номер контроллера', dataIndex: 'hw_serial', flex: 1 },
+        { text: 'Серийный номер', dataIndex: 'hw_serial', flex: 1 },
         { text: 'Широта', dataIndex: 'lat', flex: 1 },
         { text: 'Долгота', dataIndex: 'lng', flex: 1 },
     ],

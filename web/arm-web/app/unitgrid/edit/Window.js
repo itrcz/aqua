@@ -95,16 +95,16 @@ Ext.define('App.unitgrid.edit.Window', {
 														fields: ['name', 'val'],
 														data: [{
 															"name": "Промышленная",
-															"val": 0
+															"val": 1
 														}, {
 															"name": "Питьевое",
-															"val": 1
+															"val": 2
 														}]
 													}),
 													queryMode: 'local',
 													displayField: 'name',
 													valueField: 'val',
-													value: 0,
+													value: 1,
 													labelWidth: 150
 												}]
 											}

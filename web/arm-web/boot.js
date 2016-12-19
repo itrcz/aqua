@@ -5,7 +5,7 @@
 var Boot = function(config) {
 	var self = this;
 	var software = null;
-	var root = "/arm-web/";
+	var appDir = "/arm-web/";
 
 	document.onmousedown = function(event) { if(event.button==2) return false; }
 	
@@ -162,13 +162,13 @@ var Boot = function(config) {
 		{
 			type:"style",
 			title: "Loadnig UI icons",
-			src:root+"library/fontello/css/fontello.css",
+			src:appDir+"library/fontello/css/fontello.css",
 		},
 		//Загрузка глифов
 		{
 			type:"style",
 			title: "Loadnig UI icons",
-			src:root+"library/fontello/css/fontello-codes.css",
+			src:appDir+"library/fontello/css/fontello-codes.css",
 		},
 		//Загрузка скриптов для карт гугл
 		{
@@ -181,37 +181,42 @@ var Boot = function(config) {
 		{
 			type:"script",
 			title: "Loadnig framework core",
-			src:root+"library/ext/ext-all-rtl.js",
+			src:appDir+"library/ext/ext-all-rtl.js",
 		},
 		//Загрузка библиотеки для графиков
 		{
 			type:"script",
 			title: "Loadnig chart library",
-			src:root+"library/ext/charts.js",
+			src:appDir+"library/ext/charts.js",
 		},
 		//Загрузка стилей для фреймворка
 		{
 			type:"style",
 			title: "Loadnig framework UI",
-			src:root+"library/ext/resources/theme-crisp-all.css",
+			src:appDir+"library/ext/resources/theme-crisp-all.css",
 		},
 		//Загрузка стилей для графиков
 		{
 			type:"style",
 			title: "Loadnig chart UI",
-			src:root+"library/ext/resources/charts-all.css",
+			src:appDir+"library/ext/resources/charts-all.css",
 		},
 		//Загрузка дополнительных стилей
 		{
 			type:"style",
 			title: "Loadnig styles",
-			src:root+"theme.css",
+			src:appDir+"/css/theme.css",
+		},
+		{
+			type:"style",
+			title: "Loadnig styles",
+			src:appDir+"/css/style.css",
 		},
 		//Загрузка jquery скриптов
 		{
 		  type:"script",
 		  title: "Loading jquery",
-		  src:root+"library/jquery/jquery-1.12.4.min.js",
+		  src:appDir+"library/jquery/jquery-1.12.4.min.js",
 		},
 		//Загрузка необходимых классов для общения с сервером
 		{
@@ -230,7 +235,7 @@ var Boot = function(config) {
 		{
 			type:"script",
 			title: "Initiating application",
-			src:root+"app/Init.js",
+			src:appDir+"app/Init.js",
 		},
 		//Таймаут для того, чтобы приложение успело отрисоватся перед пропаданием загрузчика
 		{

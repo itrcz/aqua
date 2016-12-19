@@ -1,5 +1,6 @@
 module.exports = function(ns) {
-	var port = 5055;
+	
+	const port = 5055;
 
 	ns.net = require('net');
 
@@ -7,14 +8,14 @@ module.exports = function(ns) {
 
 		socket.name = socket.remotePort;
 
-		console.log("New connection on port " + socket.name );
+		console.log(`New connection on port ${socket.name}`);
 
 		socket.paket = false;
 		socket.Buff = new app.commsocket.rxBuffer();
 
 		socket.on('data', function(data) {
 
-			for(var i = 0;i < data.length; i++) {
+			for(let i = 0;i < data.length; i++) {
 				socket.paket = socket.Buff.$rx(data);
 
 				if (socket.paket) {
@@ -30,10 +31,10 @@ module.exports = function(ns) {
 
 		});
 		socket.on('close', function() {
-			console.log("Port " + socket.name + " disconnected" );
+			console.log(`Port ${socket.name} disconnected`);
 		});
 	}).listen(port);
 
-		console.log(("Push сервер:   127.0.0.1:"+port+"").blue);
+	console.log(`Push сервер:   127.0.0.1:${port}`.blue);
 
 }

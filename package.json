@@ -7,19 +7,20 @@
     "express": "^4.13.4",
     "mysql": "^2.11.0",
     "socket.io": "^1.4.6",
-    "colors": "^1.1.2"
+    "colors": "^1.1.2",
+    "serialport": "^4.0.7",
+    "squel": "^5.5.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^3.0.0",
     "gulp-uglifyjs": "^0.6.2",
-    "pm2": "^2.2.2",
-    "serialport": "^4.0.7",
-    "squel": "^5.5.0"
+    "pm2": "^2.2.2"
   },
   "scripts": {
-    "test": "test"
+    "dev": "node-sass --watch --recursive /Users/aw/Documents/AquaMonitor/src/styles --output /Users/aw/Documents/AquaMonitor/web/arm-web/css & node app.js",
+    "app": "node app.js"
   },
   "author": "Awesome",
   "license": "ISC"

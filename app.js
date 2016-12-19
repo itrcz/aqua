@@ -16,14 +16,18 @@ global.crypto = require('crypto');
 global.appDir = path.resolve(__dirname);
 
 //load global functions
-require(appDir+'/core/functions.js');
-require(appDir+'/core/namespaces.js');
+require(`${appDir}/core/functions.js`);
+require(`${appDir}/core/namespaces.js`);
 
-console.log(("                             ").bgBlue.white);
-console.log(("         "+ about.name +"         ").bgBlue.white);
-console.log(("       "+ " Версия:" + about.version + "         ").bgBlue.white);
-console.log(("        "+ " Cборка:" + about.build +"          ").bgBlue.white);
-console.log(("                             ").bgBlue.white);
+console.log(`                             `.bgBlue.white);
+console.log(`         ${about.name}         `.bgBlue.white);
+console.log(`        Версия:${about.version}         `.bgBlue.white);
+console.log(`         Cборка:${about.build}          `.bgBlue.white);
+console.log(`                             `.bgBlue.white);
+setTimeout(function(){
+	console.log((`                             `).bgBlue.white);
+},100);
+
 
 //Load components
 LoadComponent("Server");
@@ -37,7 +41,3 @@ LoadComponent("CommSocket");
 LoadComponent("Controller");
 LoadComponent("Log");
 LoadComponent("Unit");
-
-setTimeout(function(){
-	console.log(("                             ").bgBlue.white);
-},100)

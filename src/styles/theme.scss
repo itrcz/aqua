@@ -1,0 +1,94 @@
+/*
+Переназначения стилей extjs
+*/
+
+/*
+Фон когда открыто окно
+*/
+.x-mask{
+	background-color: rgba(0, 16, 45, 0.35);
+}
+.btn-red-dark {
+	background: #8b1717 !important;
+	&:hover {	
+		background: #9e1e1e !important;
+	}
+	&:active {
+		background: #841a1a !important;
+	}
+	& span {
+		color: #ffffff;font-weight: bold;
+	}
+	& .x-btn-glyph {
+		color:#ffffff;
+	}
+}
+
+/*
+Кнопки
+*/
+.btn-green {
+	background: #339c00 !important;
+	&:hover {
+		background: #2e8700 !important;
+	}
+	&:active {
+		background: #339c00 !important;
+	}
+	& span {
+		color: #ffffff;font-weight: bold;
+	}
+	& .x-btn-glyph {
+		color:#ffffff;
+	}
+}
+
+.btn-blue {
+	background: #006ced !important;
+	&:hover {
+		background: #0058c2 !important;
+	}
+	&:active {
+		background: #006ced !important;
+	}
+	& span {
+		color: #ffffff;	font-weight: bold;
+	}
+	& .x-btn-glyph {
+		color:#ffffff;
+	}
+}
+
+.btn-gray {
+	
+	background: #353638 !important;
+	&:hover {
+		background: #161617 !important;
+	}
+	&:active {
+		background: #353638 !important;
+	}
+	& span {
+		color: #ffffff;	font-weight: bold;
+	}
+	& .x-btn-glyph {
+		color:#ffffff;
+	}
+}
+
+.btn-lightgray {
+	background: #b3b3b3 !important;
+	&:hover {
+		background: #cacaca !important;
+	}
+	&:active {
+		background: #a1a1a1 !important;
+	}
+	& span {
+		color: #202020;	font-weight: bold;
+	}
+	& .x-btn-glyph {
+		color:#202020;
+	}
+}
+
