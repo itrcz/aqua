@@ -26,7 +26,7 @@ global.squel 	= 	require('squel');
  		ns.connection = ns.engine.createConnection(__config.database);
  	}
  	if (ns.connection.state != "authenticated") {
- 		//ns.connection = ns.engine.createConnection(__config.database);
+ 		ns.connection = ns.engine.createConnection(__config.database);
  		ns.connection.connect();	
  	}
  }

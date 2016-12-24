@@ -23,7 +23,7 @@ Ext.define('App.unitgrid.View', {
 	    { text: 'Статус подключения', dataIndex: 'hw_availability', flex: 1, renderer: function(availability) {
         val = '<span class="badge badge-red icon-unlink">Нет связи</span>';
         if (availability)
-          val = '<span class="badge badge-greem icon-link">Онлайн</span>';
+          val = '<span class="badge badge-green icon-link">Онлайн</span>';
 
 		    return val;
 	    }},

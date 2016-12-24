@@ -78,7 +78,12 @@ ns.io.on('connection', function (socket) {
 		
 	});
 	  
-	
+	 socket.on('error', function() {
+
+		console.log("Socket error, destroyed");
+
+    socket.destroy();
+	});
 	
 	/* End of tests */
 	

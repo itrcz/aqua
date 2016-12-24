@@ -13,7 +13,7 @@ Ext.define('App.reports.View', {
 			title:"Тест",
 			items: [
 				{
-					xtype: 'chart',
+					xtype: 'columnchart',
 		            width: '100%',
 		            height: 500,
 		            store: {
@@ -27,8 +27,8 @@ Ext.define('App.reports.View', {
 		            },
 		            sprites: [{
 		                type: 'text',
-		                text: 'Уровень воды по тестовой скважине',
-		              //  font: '22px Helvetica',
+		                text: 'Динамика тестовой скважине',
+		                font: '22px Helvetica',
 		                width: 100,
 		                height: 30,
 		                x: 40, // the sprite x position
@@ -37,7 +37,7 @@ Ext.define('App.reports.View', {
 		            axes: [{
 		                type: 'numeric',
 		                position: 'left',
-		                title: 'Расход',
+		                title: 'Динамика',
 		                grid: true,
 		                fields: 'lvl',
 		                label: {
@@ -66,7 +66,7 @@ Ext.define('App.reports.View', {
 		                axis: 'left',
 		                xField: 'recordDate',
 		                yField: 'lvl',
-		                smooth: true,
+		                smooth: false,
 		                highlight: false,
 		                showMarkers: false,
 		                style: {
