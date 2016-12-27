@@ -25,11 +25,12 @@ module.exports = function(ns) {
 					rowTimeStamp = (data[i].timestamp + timestamp);
 					
 					var A0 = data[i].params['A0'];
-					var B1 = data[i].params['B0'];
+					var B0 = data[i].params['B0'];
 					var F1 = data[i].params['F1'];
 					var F2 = data[i].params['F2'];
 
-					var query = ` 
+					var query = 
+					` 
 						INSERT INTO ${ns.vars.unit_data_table} (recordDate, unit_id, A0, B0, F1, F2) 
 						VALUES(
 							FROM_UNIXTIME(${rowTimeStamp}), ${unitId}, "${A0}", "${B0}", "${F1}", "${F2}"

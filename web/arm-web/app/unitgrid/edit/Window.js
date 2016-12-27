@@ -20,8 +20,16 @@ Ext.apply(Ext.form.VTypes, {
 	'ipText': 'Не корректный IP адрес'
 });
 
+
+// Ext.require('App.unitgrid.edit.tabs.passport', function() {
+
+// })
 Ext.define('App.unitgrid.edit.Window', {
 	extend: 'Ext.window.Window',
+	requires: [
+		'App.unitgrid.edit.tabs.passport'
+	],
+	
 	title: 'Объект',
 	layout: 'fit',
 	modal: true,
@@ -41,75 +49,9 @@ Ext.define('App.unitgrid.edit.Window', {
 							layoyt: 'fit',
 							bodyPadding: 10,
 							activeTab: 0,
-							items: [{
-									xtype: 'panel',
-									title: 'Паспорт',
-
-									id: 'unit_edit_tab_general',
-									items: [ //unit_edit_tab_general
-											{
-												xtype: 'fieldset',
-												title: 'Скважина',
-												items: [{
-													xtype: 'textfield',
-													fieldLabel: 'Наименование субъекта',
-													name: 'name',
-													cls:'fffff',
-													allowBlank: false,
-													anchor: '100%',
-													labelWidth: 150
-												}, {
-													xtype: 'textfield',
-													fieldLabel: 'Владелец скважины',
-													name: 'owner',
-													allowBlank: false,
-													anchor: '100%',
-													labelWidth: 150
-												}, {
-													xtype: 'numberfield',
-													fieldLabel: 'Номер скважины',
-													name: 'well_num',
-													allowBlank: false,
-													anchor: '100%',
-													labelWidth: 150
-												}, {
-													xtype: 'numberfield',
-													fieldLabel: 'Кадастровый номер скважины',
-													name: 'well_num_cadastral',
-													allowBlank: false,
-													anchor: '100%',
-													labelWidth: 150
-												}, {
-													xtype: 'numberfield',
-													fieldLabel: 'Год бурения',
-													name: 'well_drill_year',
-													allowBlank: false,
-													anchor: '100%',
-													labelWidth: 150
-												}, {
-													xtype: 'combobox',
-													editable: false,
-													fieldLabel: 'Назначение скважины',
-													name: 'well_type',
-													store: Ext.create('Ext.data.Store', {
-														fields: ['name', 'val'],
-														data: [{
-															"name": "Промышленная",
-															"val": 1
-														}, {
-															"name": "Питьевое",
-															"val": 2
-														}]
-													}),
-													queryMode: 'local',
-													displayField: 'name',
-													valueField: 'val',
-													value: 1,
-													labelWidth: 150
-												}]
-											}
-										] //end of unit_edit_tab_general
-								}, {
+							items: [
+									Ext.require('App.unitgrid.edit.tabs.passport')
+								, {
 									xtype: 'panel',
 									title: 'Гео позиция',
 

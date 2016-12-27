@@ -13,7 +13,7 @@ Ext.define('App.reports.View', {
 			title:"Тест",
 			items: [
 				{
-					xtype: 'columnchart',
+					xtype: 'chart',
 		            width: '100%',
 		            height: 500,
 		            store: {

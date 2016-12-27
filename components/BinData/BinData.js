@@ -54,7 +54,8 @@ ns.makeArray = function(buffer) {
 		dataStartIndex++;
 		
 		dataVal = buffer.readUIntBE(dataStartIndex, dataLen);
-		
+
+
 		dataStartIndex += dataLen;
 		
 		var time = dataVal;
@@ -65,7 +66,7 @@ ns.makeArray = function(buffer) {
 			dataLen = buffer[dataStartIndex];
 			
 			dataStartIndex++;
-			
+
 			dataVal = buffer.readUIntBE(dataStartIndex, dataLen);
 			
 			dataStartIndex += dataLen;
